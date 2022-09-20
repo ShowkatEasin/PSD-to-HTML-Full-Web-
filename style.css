@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    padding: 0 10%;
+    align-items: center;
+   
+}
+header{
+    background: url("images/head.png");
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+}
+header::after{
+    content: "";
+    clear: both;
+    display: block;
+    
+
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+ h1 span{
+    color: #fe320a;
+}
+
+.description{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.description p{
+    text-align: center;
+}
+
+h1 span{
+   color: #fe320a;
+}
+nav{
+    z-index: 999;
+    background: rgba(0, 0, 0, .4);
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.menu ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+nav div ul li{            
+    padding: 2%;
+}
+
+nav div ul{
+    list-style-type: none;
+    margin-top: 3% ;
+    margin-left: 35%;
+    display: flex
+}
+.logo{
+
+}
+.logo img{
+    width: 75%;
+    
+}
+.menu{
+    width: 75%;
+    
+}
+
+/* .menu ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px;
+    display: inline-block;
+} */
+header button{
+    background: #fe320a;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+}
+.section-head{
+    width: 15%;
+    margin: auto;
+    text-align: center;
+   
+}
+.section-head h3{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-head h3::after{
+    content: "";
+    clear: both;
+    display: block;
+
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #fe320a;
+
+    position: absolute;
+    bottom: 15.4%;
+    right: 50%;
+}
+.section-head hr{
+    width: 65%;
+    border: none;
+    height: 2px;
+    background: #fe320a;
+}
+.color{
+    color: #fe320a;
+}
