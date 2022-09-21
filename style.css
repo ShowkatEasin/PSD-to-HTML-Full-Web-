@@ -292,7 +292,7 @@ nav div ul{
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	bottom: 3px;
 	color: white;
 	display: none;
 	justify-content: center;
@@ -311,6 +311,7 @@ nav div ul{
 }
 .trow .col img{
 	width: 100%;
+    height: 101%;
 }
 .trow .col img:hover + .over{
 	display: block;
@@ -324,7 +325,7 @@ nav div ul{
 	bottom: 0;
 	display: none;
 }
-.trow .col .over .social1{
+.trow .col .over .social{
 	text-align: center;
 	color: white;
 	background: rgba(255, 0, 0, .5);
@@ -356,29 +357,48 @@ font-weight: bold;
 .trow{
     display: flex;
 }
-.prow .col{
-width: 31.33% ;
-margin: 1%;
-position: relative;
-}
-.prow .col img{
-    width: 100%;
-}
 
-.prow .col img:hover + .over{
-   display: flex;
+.bg{
+    background: url(images/bg.png);
+    padding: 50px 10%;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: -1;
 }
-.prow .col .over{
-    background: rgba(255, 0, 0, .5);
+.bg::before{
+    content: "";
+    clear: both;
+    display: block;
+   
+    background: rgba(0, 0, 0, .5);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 3px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    color: white;
+    bottom: 0; 
+    z-index: -1;
 }
+.brow{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
 
+}
+.brow .col{
+    width: 31.33%;
+    margin: 1%;
+    box-shadow: 1px 1px 10px black;
+    padding: 15px;
+    margin: 15px;
+    
+    
+
+}
+.brow .col img{
+    width: 100%;   
+}
