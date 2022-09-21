@@ -359,7 +359,7 @@ font-weight: bold;
 }
 
 .bg{
-    background: url(images/bg.png);
+    background: url("images/bg.png");
     padding: 50px 10%;
     background-size: cover;
     text-align: center;
@@ -401,4 +401,56 @@ font-weight: bold;
 }
 .brow .col img{
     width: 100%;   
+}
+
+.cont{
+    background: url("images/con-bg.png");
+    padding: 25px 10px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.cont::after{
+    content: "";
+    clear: both;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+
+}
+.cont form input::placeholder,
+.cont form textarea::placeholder{
+    color: white;
+}
+.cont form input{
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 42%;
+    margin: 2%;
+}
+.cont form textarea{
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 91.5%;
+    margin: 1%;
+}
+.last{
+    background: url("images/last-bg.png");
+    background-size: cover;
+    padding: 20px;
+}
+.last a{
+    color: white;
+    padding: 10px ;
 }
